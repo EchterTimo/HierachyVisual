@@ -43,7 +43,7 @@ def index():
 
     try:
         # Load the hierarchy from data.json
-        with open("data.json", "r") as file:
+        with open("data.json", "r", encoding='utf-8') as file:
             hierarchy = json.load(file)
 
         # Generate Mermaid flowchart
